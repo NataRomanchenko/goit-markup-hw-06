@@ -513,9 +513,9 @@
 </main> -->
 <!-- =======Footer==== -->
  <footer class="page-footer">
-    <div class="conteiner page-footer-content">
-    <div class="footer container">
-<a class="logo" href="./index.html">Web<span class="logo-span">Studio</span></a>
+    <div class="container page-footer-content">
+    <div class="footer-container">
+<a class="logo-footer" href="./index.html">Web<span class="logo-footer-span">Studio</span></a>
     <p class="page-footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
 </div>
 <div class="footer-social">
@@ -566,7 +566,7 @@
     <p class="form-footer-text">Subscribe</p>
 <form class="form-footer">
     <label class="subscribe-label" for="email">
-        <input class="subscribe-inpud" type="email" name="useremail" id="email" placeholder="E-mail">
+        <input class="subscribe-input" type="email" name="useremail" id="email" placeholder="E-mail">
     </label>
 <button class="subscribe-btn" type="submit">Subscribe
     <svg class="subscribe-icon" width="24" height="24">
@@ -578,10 +578,13 @@
 </div>
 
 
-</footer > -->
-<!-- <div class="backdrop is-open">
+</footer >
+
+ <!-- <div class="modal-overlay" id="modal-window" is-open>
     <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button id="close-modal" 
+        type="button " class="modal-close-btn" 
+        data-modal-close>
             <svg class="modal-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -632,19 +635,23 @@
                     </use>
                 </svg>
             </span>
+            <span>
             I accept the terms and conditions of the
-            <a href="#" class="blu">Privacy Policy</a>
+            <a href="#" class="link-pryvacy-user">Privacy Policy</a>
+        </span>
         </label>
     </div>
     <button class="form-btn-submit" type="submit">Send</button>
-
-        </form>
+</form>
     </div>
 </div> -->
-<div class="mobil-menu 
-">
+<script src="./js/mobil-menu-js"></script>
+<script src="./js/modal-js>"></script>
+
+<div  class="mobil-menu" data-mobile>
     <div class="container container-mobil-menu" >
-    <button class="mobil-menu-btn" type="button">
+    <button  id="close-mobil-menu" class="mobil-menu-btn" type="button"
+    data-mobil-close>
         <svg class="icon-mobil-menu-btn" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -708,6 +715,6 @@
         </li>
     </ul>
 </div>
-</div>
+</div> -->
  </body>
 </html>
