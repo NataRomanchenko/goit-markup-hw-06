@@ -59,36 +59,44 @@ padding: 0 16px;
   }
 
   /* #region header */
+
   @media screen and (max-width: 767px) {
     .nav-list,
     .header-adres {
-    display: none;}
+    display: none;
+  }
     }
   
   .header-page {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     }
-    .header-page .container {
+    .container-header {
         display: flex;
             justify-content: space-between;
             align-items: center;
+           }
+    .nav-page {
+      display: flex;
+        align-items: center;
     }
-    
     .logo {
-        font-family: "Raleway", sans-serif;
-        font-weight: 700;
-            font-size: 18px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #4d5ae5;
-            padding: 16px 0;
-    }
+        font-family: 'Raleway', sans-serif;
+          color: #4d5ae5;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 1.17;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: left;
+          letter-spacing: 0.03em;
+          padding: 16px 0;
+        }
     
     .logo-span {
         color: #2e2f42;
     }
+
     .header-open-modal-btn {
     border: none;
   background-color: transparent;
@@ -103,24 +111,22 @@ display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .nav-page {
-    display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        }
-        .header-page .logo {
+ 
+        .logo {
           padding: 24px 0;
           margin-right: 120px;
           }
           .nav-list {
-          display: block;
-          padding: 24px 0;
-          display: flex;
-          align-items: center;
-          gap: 24px;
-          margin-right: 121px;
+            text-align: center;
+              display: flex;
+              gap: 40px;
+              padding-left: 0;
+              flex-grow: 1;
+              margin: 0;
+            }
+          
          
-          }.nav-item-list {
+          .nav-item-list {
           font-weight: 500;
               font-size: 16px;
               line-height: 1.5;
@@ -150,13 +156,11 @@ display: block;
           }
           .header-adres {
           font-style: normal;
-          margin-right: 16px;
-          }
+         }
           .header-adres-list {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 24px 0;
           gap: 12px;
           }
           .header-adres-item {
@@ -179,7 +183,7 @@ display: block;
   .header-page .logo {
     padding: 24px 0;
     margin-right: 76px;
-    margin-left: 156px;
+   
     }
     .header-adres-item {
      
@@ -191,7 +195,7 @@ display: block;
       display: flex;
       flex-direction: row;
       align-items: center;
-      padding: 24px 0;
+    
       gap: 40px;
       }
 }
@@ -329,7 +333,7 @@ background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7)),
       url("../images/tablet/dark-bg-tablet@1x.jpg");
   }
-
+}
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
 (min-resolution: 2dppx){
@@ -340,7 +344,7 @@ background-image: linear-gradient(to bottom,
       url("../images/tablet/dark-bg-tablet@2x.jpg");
   }
 }
-}
+
 @media screen and (min-width: 1158px) {
   .hero-section {
     background-image: linear-gradient(
@@ -348,6 +352,7 @@ background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7)),
       url("../images/decspot/people-office@1x.jpg");
   }
+}
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -358,7 +363,7 @@ background-image: linear-gradient(to bottom,
       url("../images/decspot/people-office@2x.jpg");
   }
 }
-}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 112px;
@@ -435,7 +440,8 @@ background-image: linear-gradient(to bottom,
   padding-bottom: 96px;
 }
 .features-icon {
-display: none;}
+display: none;
+}
 
 .features-list {
 display: flex;
@@ -521,7 +527,7 @@ font-weight: 400;
 .our-team-title {
 font-weight: 700;
   font-size: 36px;
-  line-height: 1,11;
+  line-height: 1.11;
   text-align: center;
   color: #2e2f42;
   letter-spacing: 0.02em;
